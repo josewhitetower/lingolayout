@@ -1,0 +1,27 @@
+.navigation {
+  height: 3rem;
+  padding: .5rem;
+  position: absolute;
+  z-index: 1;
+
+  &__button {
+    display: inline-block;
+    margin: .3rem .2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+
+    &-green {
+      background-color: $color-green;
+      border: .1rem solid darken($color: $color-green, $amount: 3)
+    }
+    &-yellow {
+      background-color: $color-yellow;
+      border: .1rem solid darken($color: $color-yellow, $amount: 5)
+    }
+    &-red {
+      background-color: $color-primary;
+      border: .1rem solid darken($color: $color-primary, $amount: 20)
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.section-left,
+.section-right {
+  height: 100%;
+  
+}
+
+.section-left {
+  background-color: $color-primary;
+  width: 35%;
+  float: left;
+  border-radius: 3px 0 0 3px;
+
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+.section-right{
+  background-color: $color-grey;
+  border-radius: 0 3px 3px 0;
+  float: right;
+  width: 65%;
+  text-align: center;
+  position: relative;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+}

@@ -30,7 +30,7 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem);
-}
+  }
 
   &__label {
     display: block;
@@ -46,5 +46,5 @@
 
   &__group:not(:last-child) {
     margin-bottom: 1rem;
-}
+  }
 }

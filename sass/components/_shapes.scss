@@ -1,0 +1,112 @@
+.pencil {
+  transform: translateY(-2rem);
+  &__top {
+    width: 0;
+    height: 0;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-bottom: 2rem solid $color-blue;
+    text-align: center;
+   
+
+  }
+
+  &__middle {
+    border-bottom: 4rem solid $color-white;
+    border-left: 2rem solid transparent;
+    border-right: 2rem solid transparent;
+    height: 0;
+    width: 6rem;
+   
+  }
+
+  &__bottom {
+    width: 6rem;
+   
+    height: 25rem;
+
+    &-left {
+      height: 100%;
+      background: $color-blue-darker;
+      width: 50%;
+      float: left;
+    }
+    &-right {
+      height: 100%;
+      background: $color-blue;
+      width: 50%;
+      float: right;
+    }
+  }
+
+}
+
+.square {
+  width: 6rem;
+  height: 6rem;
+  background:$color-yellow;
+}
+
+.circle {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  background-color: $color-white;
+ 
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 3rem solid transparent;
+  border-right: 3rem solid transparent;
+  border-bottom: 3rem solid black;
+}
+
+.hexagon {
+  width: 5rem;
+  height: 2.5rem;
+  background: $color-blue;
+  position: relative;
+}
+.hexagon:before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 2.5rem solid transparent;
+  border-right: 2.5rem solid transparent;
+  border-bottom: 1.5rem solid $color-blue;
+}
+.hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 2.5rem solid transparent;
+  border-right: 2.5rem solid transparent;
+  border-top: 1.5rem solid $color-blue;
+}
+
+.pentagon {
+  position: relative;
+  width: 5rem;
+  height: 2.5rem;
+  background-color: $color-yellow;
+}
+
+.pentagon:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -2rem;
+  border-left: 2.5rem solid transparent;
+  border-right: 2.5rem solid transparent;
+  border-bottom: 2rem solid $color-yellow;
+  
+}

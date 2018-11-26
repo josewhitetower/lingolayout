@@ -1,5 +1,6 @@
 .pencil {
   transform: translateY(-2rem);
+
   &__top {
     width: 0;
     height: 0;
@@ -7,7 +8,7 @@
     border-right: 1rem solid transparent;
     border-bottom: 2rem solid $color-blue;
     text-align: center;
-   
+
 
   }
 
@@ -17,12 +18,12 @@
     border-right: 2rem solid transparent;
     height: 0;
     width: 6rem;
-   
+
   }
 
   &__bottom {
     width: 6rem;
-   
+
     height: 25rem;
 
     &-left {
@@ -31,6 +32,7 @@
       width: 50%;
       float: left;
     }
+
     &-right {
       height: 100%;
       background: $color-blue;
@@ -44,7 +46,7 @@
 .square {
   width: 6rem;
   height: 6rem;
-  background:$color-yellow;
+  background: $color-yellow;
 }
 
 .circle {
@@ -52,7 +54,7 @@
   width: 6rem;
   border-radius: 50%;
   background-color: $color-white;
- 
+
 }
 
 .triangle {
@@ -69,6 +71,7 @@
   background: $color-blue;
   position: relative;
 }
+
 .hexagon:before {
   content: "";
   position: absolute;
@@ -80,6 +83,7 @@
   border-right: 2.5rem solid transparent;
   border-bottom: 1.5rem solid $color-blue;
 }
+
 .hexagon:after {
   content: "";
   position: absolute;
@@ -108,5 +112,5 @@
   border-left: 2.5rem solid transparent;
   border-right: 2.5rem solid transparent;
   border-bottom: 2rem solid $color-yellow;
-  
+
 }

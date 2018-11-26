@@ -1,32 +1,43 @@
-* ,
+*,
 *::after,
-*::before  {
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
+
 html {
     font-size: 62.5%; //1rem = 10px; 10/16
 
-    @include respond(tab-land){ // width < 1200px
-        font-size: 56.25%;//1rem = 9px; 9/16
+    @include respond(tab-land) {
+        // width < 1200px
+        font-size: 56.25%; //1rem = 9px; 9/16
     }
-    @include respond(tab-port){ //width < 900px
-        font-size: 50%;//1rem = 8px; 8/16
+
+    @include respond(tab-port) {
+        //width < 900px
+        font-size: 50%; //1rem = 8px; 8/16
     }
-    @include respond(big-desktop){
-        font-size: 75%;//1rem = 12px; 12/16
+
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12px; 12/16
     }
-} 
+}
+
 body {
-     box-sizing: border-box; /*it will make the width/height to count 
+    box-sizing: border-box;
+    /*it will make the width/height to count
     the padding and the border*/
     margin: 3rem auto;
     max-width: 90rem;
-    @include respond(tab-port){ //width < 900px
+
+    @include respond(tab-port) {
+        //width < 900px
         padding: 0;
     }
-    border: 1px solid $color-grey-2;
+
+    border: 0; //1px solid $color-grey-2;
+    box-shadow: 0 .2rem .6rem 0 hsla(0, 0%, 0%, 0.2);
     border-radius: 3px;
     height: 60rem;
 

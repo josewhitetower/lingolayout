@@ -15,10 +15,12 @@
       background-color: $color-green;
       border: .1rem solid darken($color: $color-green, $amount: 3)
     }
+
     &-yellow {
       background-color: $color-yellow;
       border: .1rem solid darken($color: $color-yellow, $amount: 5)
     }
+
     &-red {
       background-color: $color-primary;
       border: .1rem solid darken($color: $color-primary, $amount: 20)

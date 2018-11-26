@@ -1,16 +1,18 @@
 .btn {
+
   &,
-  &:link ,
-  &:visited, {
-      width: 100%;
-      display: inline-block; 
-      border-radius: .2rem;
-      transition: all .2s;
-      position: relative;
-      font-size: $default-font-size;
-      border: none;
-      padding: .9rem;
-      cursor: pointer;
+  &:link,
+  &:visited,
+    {
+    width: 100%;
+    display: inline-block;
+    border-radius: .2rem;
+    transition: all .2s;
+    position: relative;
+    font-size: $default-font-size;
+    border: none;
+    padding: .9rem;
+    cursor: pointer;
   }
 
   &--red {
